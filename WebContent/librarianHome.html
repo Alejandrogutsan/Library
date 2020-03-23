@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GBC Library Librarian Home</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<script> 
+	$(function(){
+	  $("#navigation").load("librarianNavigation.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+</script>
+<body>
+	<div id="navigation"></div>
+		<div class="container">
+	        <form action="" method="">
+	      		<h2>Librarian Section</h2>
+	        	<div class="card">
+					<div class="card-body">
+					  <p class="card-text"><button type="button" class="btn btn-primary btn-lg btn-block">Add Book</button></p>
+					  <p class="card-text"><button type="button" class="btn btn-primary btn-lg btn-block">View Book</button></p>
+					  <p class="card-text"><button type="button" class="btn btn-primary btn-lg btn-block">Issue Book</button></p>
+					  <p class="card-text"><button type="button" class="btn btn-primary btn-lg btn-block">View Issued Book</button></p>
+					  <p class="card-text"><button type="button" class="btn btn-primary btn-lg btn-block">Book Return</button></p>
+					  <p class="card-text"><a href="Logout"><button type="button" class="btn btn-primary btn-lg btn-block">Logout</button></a></p>
+					</div>
+				</div>
+	        </form>
+		</div>
+	<div id="footer"></div>
+</body>
+</html>

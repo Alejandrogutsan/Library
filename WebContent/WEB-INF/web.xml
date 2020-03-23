@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>gbclibrary</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+   <param-name>School</param-name>
+   <param-value>George Brown College</param-value>
+  </context-param>
+  
+  <context-param>
+   <param-name>Locale</param-name>
+   <param-value>Toronto, Canada</param-value>
+  </context-param>
+  
+<!-- multiple url mapping -->
+   <!-- servlet definitions --> 
+<!-- 	<servlet> -->
+<!-- 	 <servlet-name>LibrarianAuthenticationServlet</servlet-name> -->
+<!-- 	 <servlet-class>ca.gbc.library.servlet.LibrarianAuthenticationServlet</servlet-class> -->
+<!-- 	</servlet> -->
+
+ 	<!-- servlet mappping -->
+<!-- 	<servlet-mapping> -->
+<!-- 	 <servlet-name>LibrarianAuthenticationServlet</servlet-name> -->
+<!-- 	 <url-pattern>/LibrarianAuthentication</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	
+<!-- 	<servlet-mapping> -->
+<!-- 	 <servlet-name>LibrarianAuthenticationServlet</servlet-name> -->
+<!-- 	 <url-pattern>/LibAuth</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	
+</web-app>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GBC Library Login</title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<script> 
+	$(function(){
+	  $("#navigation").load("navigation.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+</script>
+<body>
+	<div id="navigation"></div>
+		<div class="container">
+	    	<div class="row">
+			    <div class="col-sm-6">
+			        <form action="AdminAuthenticate" method="post">
+			        	<div class="card">
+							<div class="card-body">
+							  <h5 class="card-title">Admin Login</h5>
+							  <p class="card-text"><input value="admin@georgebrown.ca" type="email" name="adminEmail" class="form-control" placeholder="Email address" required autofocus></p>
+							  <p class="card-text"> <input value="admin123" type="password" name="adminPassword" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
+							  <button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+			        </form>
+			    </div>
+			    <div class="col-sm-6">
+			        <form action="LibrarianAuthenticate" method="post">
+			        	<div class="card">
+							<div class="card-body">
+							  <h5 class="card-title">Librarian Login</h5>
+							  <p class="card-text"><input value="librarian@georgebrown.ca" type="email" name="librarianEmail" class="form-control" placeholder="Email address" required autofocus></p>
+							  <p class="card-text"> <input value="librarian123" type="password" name="librarianPassword" class="form-control" id="exampleInputPassword1" placeholder="Password"></p>
+							  <button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+			        </form>
+			    </div>
+			</div>
+		</div>
+	<div id="footer"></div>
+</body>
+</html>	

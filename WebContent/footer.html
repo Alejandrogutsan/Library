@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<footer class="fixed-bottom">
+	<hr>
+      <div class="container">
+      	<div class="float-left">
+			<p>Your Name, 123456789</p>
+		</div>
+		<div class="float-right">
+			<p id="date"></p>
+		</div>
+      </div>
+    </footer>
+	<script>
+        var today = new Date();
+        var month = new Array();
+        month[0] = "January";
+        month[1] = "February";
+        month[2] = "March";
+        month[3] = "April";
+        month[4] = "May";
+        month[5] = "June";
+        month[6] = "July";
+        month[7] = "August";
+        month[8] = "September";
+        month[9] = "October";
+        month[10] = "November";
+        month[11] = "December";
+        var m = month[today.getMonth()];
+        var day = today.getDate();
+        var year = today.getFullYear();
+		document.getElementById("date").innerHTML = m + " " + day + ", " + year;
+	</script>
+</body>
+</html>
